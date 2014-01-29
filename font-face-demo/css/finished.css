@@ -1,0 +1,22 @@
+/* Fontin Sans Regular and Italic by Jos Buivenga (exljbris) -> www.exljbris.nl */
+
+@font-face {
+  font-family: "Fontin Sans Regular";
+  src: url("type/fontin_sans_r_45b-webfont.eot?#iefix") format("embedded-opentype"),
+    url("type/fontin_sans_r_45b-webfont.woff") format("woff"),
+    url("type/fontin_sans_r_45b-webfont.otf") format("opentype"),
+    url("type/fontin_sans_r_45b-webfont.svg#fontin_sans_r_45b-webfont") format("svg");
+  }
+  
+@font-face {
+  font-family: "Fontin Sans Italic";
+  src: url("type/fontin_sans_r_45b-webfont.eot?#iefix") format("embedded-opentype"),
+    url("type/fontin_sans_i_45b-webfont.woff") format("woff"),
+    url("type/fontin_sans_i_45b-webfont.otf") format("opentype"),
+    url("type/fontin_sans_i_45b-webfont.svg#fontin_sans_i_45b-webfont") format("svg");
+  }
+  
+  
+h2 { font-family: "Fontin Sans Regular", Georgia, serif; }
+h2 em { font-family: "Fontin Sans Italic", Georgia, serif; }
+em { font-style: italic; }

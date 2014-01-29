@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title> Anchor links</title>
+		
+		<style type="text/css">
+			body {
+				width:500px;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			.code {
+				margin: 20px;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<h1>How to use anchor links</h1>
+		
+		<ul>
+			<li><a href="#first">Step 1</a></li>
+			<li><a href="#second">Step 2</a></li>
+			<li><a href="#third">Step 3</a></li>
+			<li><a href="#fourth">Step 4</a></li>
+			<li><a href="#ipsum">Begin lorem ipsum</a></li>
+			<li><a href="#bottom">Link to bottom of the page</a></li>
+			
+		</ul>
+		
+		<p>Here's an example of how to use anchor links on your pages. This is just straight html, no CSS. Above are some links to some paragraphs. You can hit the links above and see what the result is. 
+		
+		<h3 id="first">Step 1</h3>
+		<p>The first thing you're going to do is to create your paragraphs (obviously). You need to have content on the page before linking to it. So create some paragraphs.</p>
+
+		<h3 id="second">Step 2</h3>
+		<p>The second thing you'll do is to give each of your anchors an ID attribute. (By anchors, I mean the item you want to pop to the top of the page. Here, I've anchored items in the &lt;h3&gt; elements, because I want the h3 to be the first thing displayed on the page when you hit the link.) The ID attribute is used because it's unique to an item. Class attributes would work as long as you had a unique name for each one, but that's a janky way of doing the code and will make people reading it unhappy. So create some IDs. Here, I've called them "first," "second," "third" and "fourth."
+
+		<h3 id="third">Step 3</h3>
+		<p>Then, go ahead and create your list for navigation. I've just named mine first, second, third and fourth. (Actually, you can do this first, it doesn't really matter, but you might as well do it after you create the ID hooks so you can write the link code at the same time.)</p> 
+
+		<h3 id="fourth">Step 4</h3>
+		<p>Then, to write the link code, just structue it like you see in the source up top. To be specific, write: 
+		
+			<div class="code">
+			<code>
+			<p>&lt;a href="#first">Step 1&lt;/a&gt;</p>
+			<p>&lt;a href="#second">Step 2&lt;/a&gt;</p>
+			<p>&lt;a href="#third">Step 3&lt;/a&gt;</p>
+			<p>&lt;a href="#fourth">Step 4&lt;/a&gt;</p>
+			</code>
+			</div>
+		
+		</p>
+			
+		<p>To <a href=#>link to the top of the page,</a> you can use a blank # reference, like so:
+			
+			<div class="code">
+			<code>
+			<p>&lt;a href="#">Top of page&lt;/a&gt;</p>
+			</code>
+			</div>
+			
+		</p>
+		
+		<p>That should be all you need to do. To test this, though, you're going to have to have some long fake text on the bottom of your pages. The browser won't go to the top of the paragraph if there's no more page below it to render. That's an awkward explanation, but I think you get the point. You can see this principle illusrated <a href="#bottom">at this link;</a> the bottom of the page won't wind up at the top of your browser window.</p>
+		
+		<p>I used <a href="http://slipsum.com/ipsum.html">this lorem ipsum generator</a> to generate these items, because it allows me to add &lt;p&gt; tags. Please note that versions of it are not safe for work.</p> 
+		
+		<p>If you wish to scroll to the bottom of the page, there is also another top of page link there, for more dramatic demonstrations.</p>
+		
+		<h2 id="ipsum">Begin Samuel L. Ipsum</h2>
+		
+		<!-- start slipsum code -->
+		
+		<p>Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat, vitae facilisis erat. Cras at mauris ut tortor vestibulum fringilla vel sed metus. Donec interdum purus a justo feugiat rutrum. Sed ac neque ut neque dictum accumsan. Cras lacinia rutrum risus, id viverra metus dictum sit amet. Fusce venenatis, urna eget cursus placerat, dui nisl fringilla purus, nec tincidunt sapien justo ut nisl. Curabitur lobortis semper neque et varius. Etiam eget lectus risus, a varius orci. Nam placerat mauris at dolor imperdiet at aliquet lectus ultricies. Duis tincidunt mi at quam condimentum lobortis.  </p>
+		
+		<p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+		
+		<p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+		
+		<p>Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.  </p>
+		
+		<p>Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.  </p>
+		
+		<p>Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula. In sit amet justo lectus. Etiam feugiat dolor ac elit suscipit in elementum orci fringilla. Aliquam in felis eros. Praesent hendrerit lectus sit amet turpis tempus hendrerit. Donec laoreet volutpat molestie. Praesent tempus dictum nibh ac ullamcorper. Sed eu consequat nisi. Quisque ligula metus, tristique eget euismod at, ullamcorper et nibh. Duis ultricies quam egestas nibh mollis in ultrices turpis pharetra. Vivamus et volutpat mi. Donec nec est eget dolor laoreet iaculis a sit amet diam.  </p>
+		
+		<p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+		
+		<p>Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula. In sit amet justo lectus. Etiam feugiat dolor ac elit suscipit in elementum orci fringilla. Aliquam in felis eros. Praesent hendrerit lectus sit amet turpis tempus hendrerit. Donec laoreet volutpat molestie. Praesent tempus dictum nibh ac ullamcorper. Sed eu consequat nisi. Quisque ligula metus, tristique eget euismod at, ullamcorper et nibh. Duis ultricies quam egestas nibh mollis in ultrices turpis pharetra. Vivamus et volutpat mi. Donec nec est eget dolor laoreet iaculis a sit amet diam.  </p>
+		
+		<p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada vehicula lectus, viverra sodales ipsum gravida nec. Integer gravida nisi ut magna mollis molestie. Nullam pharetra accumsan sagittis. Proin tristique rhoncus orci, eget vulputate nisi sollicitudin et. Quisque lacus augue, mollis non mollis et, ullamcorper in purus. Morbi et sem orci. Praesent accumsan odio in ante ullamcorper id pellentesque mauris rhoncus. Duis vitae neque dolor. Duis sed purus at eros bibendum cursus nec a nulla. Donec turpis quam, ultricies id pretium sit amet, gravida eget leo.  </p>
+		
+		<p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus. Duis ac dictum nibh. Etiam id massa magna. Morbi molestie posuere posuere.  </p>
+		
+		
+		<!-- end slipsum code -->
+		
+		<p id="bottom"><a href=#>Link to the top of the page.</a></p>
+
+		
+	</body>
+
+</html>
